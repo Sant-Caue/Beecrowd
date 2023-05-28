@@ -7,8 +7,7 @@ public class Main {
         
         Locale.setDefault(Locale.US);
         
-        Scanner sc = new Scanner(System.in);
-        
+        Scanner sc = new Scanner(System.in);        
         double A, B, med;
      
         A = sc.nextDouble();
@@ -20,6 +19,5 @@ public class Main {
         
         sc.close();
     
-    }
- 
+    } 
 }
