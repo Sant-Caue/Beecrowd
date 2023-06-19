@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+ 
+        int P1, P2, qtde1, qtde2;
+        double  valor1, valor2, total;
+        
+        P1 = sc.nextInt();
+        qtde1 = sc.nextInt();
+        valor1 = sc.nextDouble();
+        
+        P2 = sc.nextInt();
+        qtde2 = sc.nextInt();
+        valor2 = sc.nextDouble();
+        
+        total = (qtde1*valor1)+(qtde2*valor2);
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f%n",total);
+        
+        sc.close();        
+    }
+}
