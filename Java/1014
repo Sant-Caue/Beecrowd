@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        int distancia;
+        double combustivel, consumo_medio;
+        
+        distancia = sc.nextInt();
+        combustivel = sc.nextDouble();
+        
+        consumo_medio = distancia/combustivel;
+        
+        System.out.printf("%.3f km/l%n",consumo_medio);
+        
+        sc.close();
+    }
+ }
