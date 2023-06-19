@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        double A, B, C;
+        double TRI, CIRC, TRAP, QUAD, RET;
+        
+        A= sc.nextDouble();
+        B= sc.nextDouble();
+        C= sc.nextDouble();
+        
+        TRI = (A*C)/2.0;
+        CIRC = 3.14159*C*C;
+        TRAP = ((A+B)*C)/2.0;
+        QUAD = B*B;
+        RET = A*B;
+        
+        System.out.printf("TRIANGULO: %.3f%n", TRI);
+        System.out.printf("CIRCULO: %.3f%n", CIRC);
+        System.out.printf("TRAPEZIO: %.3f%n", TRAP);
+        System.out.printf("QUADRADO: %.3f%n", QUAD);
+        System.out.printf("RETANGULO: %.3f%n", RET);
+        
+        sc.close();
+    }
+}
