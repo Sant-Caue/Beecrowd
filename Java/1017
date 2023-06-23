@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        int tempo, velocidade, distancia;
+        double litros;
+        
+        tempo = sc.nextInt();
+        velocidade = sc.nextInt();
+        
+        litros = (tempo*velocidade)/12.000;
+        
+        System.out.printf("%.3f%n",litros);
+        
+        sc.close();
+ 
+    }
+}
