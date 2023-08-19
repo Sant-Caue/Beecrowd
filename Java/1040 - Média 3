@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        float n1, n2, n3, n4, media, exame, mediaf;
+        
+        n1 = 2*sc.nextFloat();
+        n2 = 3*sc.nextFloat();
+        n3 = 4*sc.nextFloat();
+        n4 = sc.nextFloat();
+        
+        media = (n1+n2+n3+n4)/10;
+        System.out.printf("Media: %.1f%n", media);
+        
+        if (media >= 7)
+            System.out.println("Aluno aprovado.");
+        else if (media < 5)
+            System.out.println("Aluno reprovado.");
+        else {
+            System.out.println("Aluno em exame.");
+            exame = sc.nextFloat();
+            System.out.printf("Nota do exame: %.1f%n", exame);
+            mediaf = (media+exame)/2;
+            
+            if (mediaf >= 5)
+                System.out.println("Aluno aprovado.");
+            else
+                System.out.println("Aluno reprovado.");
+                
+        System.out.printf("Media final: %.1f%n", mediaf);  
+        }
+    
+        sc.close();
+    }
+}
