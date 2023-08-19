@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        int tempo, s, min, h;
+        
+        tempo = sc.nextInt();
+        
+        min = tempo/60;
+        s = tempo % 60;
+        h = min/60;
+        min = min % 60;
+        
+        System.out.println(h+":"+min+":"+s);
+        
+        sc.close();
+    }
+}
