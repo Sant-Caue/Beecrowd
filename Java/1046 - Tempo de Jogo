@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        int hora_inicio, hora_fim, dif;
+        
+        hora_inicio = sc.nextInt();
+        hora_fim = sc.nextInt();
+        
+        if (hora_inicio == hora_fim) {
+            dif = 24;
+        } else if (hora_fim > hora_inicio){
+            dif = hora_fim - hora_inicio;
+        } else {
+            dif = hora_fim - hora_inicio + 24;
+        }
+        System.out.println("O JOGO DUROU "+dif+" HORA(S)");
+        sc.close();
+    }
+}
