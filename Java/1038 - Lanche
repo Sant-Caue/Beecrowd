@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        int cod, qtde;
+        double valor;
+        
+        cod = sc.nextInt();
+        qtde = sc.nextInt();
+        
+        if (cod == 1) {
+            valor = qtde*4.00;
+            System.out.printf("Total: R$ %.2f%n", valor);
+            
+        } else if (cod == 2) {
+            valor = qtde*4.50;
+            System.out.printf("Total: R$ %.2f%n", valor);
+            
+        } else if (cod == 3) {
+            valor = qtde*5.00;
+            System.out.printf("Total: R$ %.2f%n", valor);
+            
+        } else if (cod == 4) {
+            valor = qtde*2.00;
+            System.out.printf("Total: R$ %.2f%n", valor);
+            
+        }  else if (cod == 5) {
+            valor = qtde*1.50;
+            System.out.printf("Total: R$ %.2f%n", valor);
+        }
+ 
+    }
+}
