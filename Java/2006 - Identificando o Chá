@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        int tipo, A, B, C, D, E, cont=0;
+        
+        tipo = sc.nextInt();
+        A = sc.nextInt();
+        B = sc.nextInt();
+        C = sc.nextInt();
+        D = sc.nextInt();
+        E = sc.nextInt();
+        
+        if(A==tipo)
+            cont++;
+            
+        if(B==tipo)
+            cont++;
+            
+        if(C==tipo)
+            cont++;
+            
+        if(D==tipo)
+            cont++;
+        if(E==tipo)
+            cont++;
+
+        System.out.println(cont);
+        
+        sc.close();
+        
+    }
+}
