@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        double valor, cont;
+        
+        valor = sc.nextDouble();
+        
+        System.out.printf("%.0f\n",valor);
+        
+        cont = Math.floor(valor/100); valor %=100;
+        System.out.printf("%.0f nota(s) de R$ 100,00\n", cont);
+        
+        cont = Math.floor(valor/50); valor %=50;
+        System.out.printf("%.0f nota(s) de R$ 50,00\n", cont);
+        
+        cont = Math.floor(valor/20); valor %=20;
+        System.out.printf("%.0f nota(s) de R$ 20,00\n", cont);
+        
+        cont = Math.floor(valor/10); valor %=10;
+        System.out.printf("%.0f nota(s) de R$ 10,00\n", cont);
+        
+        cont = Math.floor(valor/5); valor %=5;
+        System.out.printf("%.0f nota(s) de R$ 5,00\n", cont);
+        
+        cont = Math.floor(valor/2); valor %=2;
+        System.out.printf("%.0f nota(s) de R$ 2,00\n", cont);
+        
+        cont = Math.floor(valor/1); valor %=1;
+        System.out.printf("%.0f nota(s) de R$ 1,00\n", cont);
+        
+        sc.close();
+    }
+}
