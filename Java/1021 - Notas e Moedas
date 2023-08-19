@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        double valor, cont;
+        
+        valor = sc.nextDouble();
+        
+        System.out.println("NOTAS:");
+        cont = Math.floor(valor/100); valor %=100;
+        System.out.printf("%.0f nota(s) de R$ 100.00\n", cont);
+        cont = Math.floor(valor/50); valor %=50;
+        System.out.printf("%.0f nota(s) de R$ 50.00\n", cont);
+        cont = Math.floor(valor/20); valor %=20;
+        System.out.printf("%.0f nota(s) de R$ 20.00\n", cont);
+        cont = Math.floor(valor/10); valor %=10;
+        System.out.printf("%.0f nota(s) de R$ 10.00\n", cont);
+        cont = Math.floor(valor/5); valor %=5;
+        System.out.printf("%.0f nota(s) de R$ 5.00\n", cont);
+        cont = Math.floor(valor/2); valor %=2;
+        System.out.printf("%.0f nota(s) de R$ 2.00\n", cont);
+        
+        System.out.println("MOEDAS:");
+        cont = Math.floor(valor/1); valor %=1;
+        System.out.printf("%.0f moeda(s) de R$ 1.00\n", cont);
+        cont = Math.floor(valor/0.5); valor %=0.5;
+        System.out.printf("%.0f moeda(s) de R$ 0.50\n", cont);
+        cont = Math.floor(valor/0.25); valor %=0.25;
+        System.out.printf("%.0f moeda(s) de R$ 0.25\n", cont);
+        cont = Math.floor(valor/0.1); valor %=0.1;
+        System.out.printf("%.0f moeda(s) de R$ 0.10\n", cont);
+        cont = Math.floor(valor/0.05); valor %=0.05;
+        System.out.printf("%.0f moeda(s) de R$ 0.05\n", cont);
+        cont = valor*100;
+        System.out.printf("%.0f moeda(s) de R$ 0.01\n", cont);
+        
+        sc.close();
+ 
+    }
+}
